@@ -23,6 +23,7 @@ jobs:
         run: |
           bundle config set ignore_messages true
           bundle install
+          bundle info rubocop
         working-directory: ./gems/quilt_rails
       - name: 💅🏼 Lint
         run: bundle exec rubocop --fail-fast
