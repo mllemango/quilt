@@ -20,7 +20,9 @@ jobs:
           ruby-version: 2.6
           bundler-cache: true
       - name: 📦 Install dependencies
-        run: bundle install --clean
+        run: |
+          bundle config set ignore_messages true
+          bundle install --clean
         working-directory: ./gems/quilt_rails
 
       - name: 💅🏼 Lint
