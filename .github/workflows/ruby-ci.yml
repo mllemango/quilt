@@ -25,7 +25,5 @@ jobs:
           bundle config set clean 'true'
           bundle exec rubocop --fail-fast
         working-directory: ./gems/quilt_rails
-      - name: 💅🏼 Lint
-        run:
       - name: Test
         run: bundle exec rake test
