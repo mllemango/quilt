@@ -22,6 +22,7 @@ jobs:
       - name: 📦 Install dependencies
         run: |
           bundle config set ignore_messages true
+          undle config set clean true
           bundle install
         working-directory: ./gems/quilt_rails
       - name: 💅🏼 Lint
