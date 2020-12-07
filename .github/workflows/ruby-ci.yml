@@ -15,9 +15,9 @@ jobs:
         name: Checkout
 
       - uses: ruby/setup-ruby@v1
-        name: Use Ruby 2.x
+        name: Use Ruby 2.6
         with:
-          ruby-version: 2.x
+          ruby-version: 2.6
           bundler-cache: true
       - name: 📦 Install dependencies
         run: bundle install --clean
